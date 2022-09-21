@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 	
+	@keyframes   Animation1
+	{
+			from {transform :   rotate(0deg); position: absolute;left:50px; }
+			to {transform :   rotate(360deg); position:absolute;left:800px; }
+	}
+
+	#img1 	
+	{
+		width: 250px;
+		height : 250px;		 
+		padding: 2px;  	
+		
+		animation-name  :  Animation1;
+		animation-duration  :   4s;
+		animation-delay  :   2s;
+		animation-iteration-count : 4;
+		animation-direction  :  alternate;
+	}
+</style>
+</head>
+<body>
+	<h1> Working with Animations CSS3 </h1>
+	<hr></hr> 
+	<img id="img1"   src="images/Globe.png" />  
+</body>
+</html>

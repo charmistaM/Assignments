@@ -1,0 +1,17 @@
+h1{
+    font-size: 100px;
+    text-align: left;
+    
+}
+body{background-color: beige;
+}
+a{
+    border: 2px solid gray;
+    background-color: lightgreen;
+    color: blue;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 30px;
+}
