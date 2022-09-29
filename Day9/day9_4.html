@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Get User Data" onclick="convertStringtoObj()">
+    <p id="happy"></p>
+    <img id="sad">
+    <script>
+        function convertStringtoObj(){
+            var  str  =    '{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"}';
+            var obj=JSON.parse(str);
+            var paraobj=document.getElementById("happy");
+            var imgobj=document.getElementById("sad");
+            happy.innerText="User Id : " +obj.id+'\n' + "First name : "+obj.first_name+'\n'+"Last Name : "+obj.last_name+'\n'+"Email : "+obj.email+'\n'+"Avatar : "+'\n';
+            imgobj.src=obj.avatar;
+        }
+    </script>
+</body>
+</html>

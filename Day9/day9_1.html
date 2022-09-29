@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert JS Object to JSON String and viceversa</h2>
+    <hr/>
+    <input type="button" value="strinify" onclick="convertObjtoString()">
+    <input type="button" value="parse" onclick="convertStringtoObj()">
+
+    <script>
+        function convertObjtoString(){
+            var obj={empno:1949,ename:"Srav",Job:"Model",Salary:2,deptno:3889738};
+            console.log(obj);
+            var str=JSON.stringify(obj);
+            console.log("Employee details in JSON String: "+ str);
+        }
+
+        function convertStringtoObj(){
+            var str='{"empno":1234,"ename":"Sravant","Job":"Prime Minister","Salary":1,"deptno":2343984}';
+            console.log(str);
+            var obj=JSON.parse(str);
+            console.log(obj);
+        }
+    </script>
+</body>
+</html>

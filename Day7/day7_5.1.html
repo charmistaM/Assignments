@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Day7_5</title>
+    <style>
+        h2{
+            text-align:center
+        }
+        #form1{
+            border: 2px solid black;
+            padding-left: 40px;
+            margin-left: 350px;
+            margin-top: 15px;
+            width: 500px;
+
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bank Account closing form</h2>
+
+    <form id="form1" action="Register.php" autocomplete="off" metdod="GET">
+        <br/>
+        <label><b>Account Holder : <span>*</span></b></label><br/>
+        <input type="text"  placeholder="First Name" autofocus required id="t1" name="t1" />
+        <input type="text"  placeholder="Last Name" required id="t2" name="t2" /><br/><br/>
+
+        <label><b>Account Number : <span>*</span></b></label><br/>
+        <input type="text" pattern="\d{11}" required id="n1" name="n1" /><br/><br/>
+
+        <label><b>Phone Number : <span>*</span></b></label><br/>
+        <input type="number"  placeholder="country code" pattern="\d{2}" required id="n2" name="n2" />
+        <input type="number"  placeholder="number" pattern="\d{10}" required id="n3" name="n3" />
+        <input type="radio" id="r2" name="r2"/>Mobile
+        <input type="radio" id="r2" name="r2"/>Work<br/><br/>
+        
+
+        <label><b>Account Type : <span>*</span></b></label><br/>
+        <input type="radio" id="r1" name="r1"/>Savings
+        <input type="radio" id="r1" name="r1"/>Current
+        <input type="radio" id="r1" name="r1"/>Salary<br/><br/>
+
+        <label><b>Permanent Address : <span>*</span></b></label><br/><br/>
+        <label>Address line1 </label><br/>
+        <input type="text" required id="t3" name="t3" /><br/>
+        <label>Address line2 </label><br/>
+        <input type="text" required id="t4" name="t4" /><br/><br/>
+
+        <table>
+            <tr>
+                <td><label>City </label></td>
+                <td><label>State </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" required id="t5" name="t5" /></td>
+                <td><input type="text" required id="t6" name="t6" /></td>
+            </tr>
+            <tr>
+                <td><label>Country </label></td>
+                <td><label>Pincode </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" required id="t7" name="t7" /></td>
+                <td><input type="number" required id="n4" name="n6" /></td>
+            </tr>
+        </table>
+        <br/><br/>
+        <input type="checkbox" id="ck1" name="ck1" required>I agree to tde terms and conditions <br/>
+
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+</html>

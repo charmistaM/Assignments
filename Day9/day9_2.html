@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert Array to String and Vice versa</h1>
+    <hr/>
+    <input type="button" value="strinify" onclick="convertArrObjtoString()">
+    <input type="button" value="parse" onclick="convertArrStringtoObj()">
+
+    <script>
+        function convertArrObjtoString(){
+            var Arr=[{empno:1949,ename:"Srav",Job:"Model",Salary:2,deptno:3889738},
+            {empno:1234,ename:"Sravant",Job:"Prime Minister",Salary:1,deptno:2343984},
+            {empno:1949,ename:"Srav",Job:"Model",Salary:2,deptno:3889738},
+            {empno:1234,ename:"Sravant",Job:"Prime Minister",Salary:1,deptno:2343984}]
+            console.log(Arr);
+            var str=JSON.stringify(Arr);
+            console.log("Employee details in Str "+ str);
+        }
+
+        function convertArrStringtoObj(){
+            var Str='[{"empno":1949,"ename":"Srav","Job":"Model","Salary":2,"deptno":3889738},{"empno":1234,"ename":"Sravant","Job":"Prime Minister","Salary":1,"deptno":2343984},{"empno":1949,"ename":"Srav","Job":"Model","Salary":2,"deptno":3889738},{"empno":1234,"ename":"Sravant","Job":"Prime Minister","Salary":1,"deptno":2343984}]';
+            console.log(Str);
+            var obj=JSON.parse(Str);
+            console.log(obj);
+        }
+    </script>
+    
+</body>
+</html>

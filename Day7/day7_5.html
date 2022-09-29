@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    span{
+        color:red;
+    }
+    h1{
+        text-align :center;
+    }
+    form{
+        border: 2px solid black;
+        margin:40px 70px 70px 70px;
+        padding-left: 350px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+</style>
+</head>
+<body>
+    <h1>Account Closing Form</h1>
+<hr></hr>
+<form>
+    <b><label for="Nameonaccount">Name on account
+        <span>*</span></b><br>
+    </label>
+        <input type="text" id="name" name="name" placeholder="First name"required>
+        <input type="text" id="name" name="name" placeholder="Last name"required><br><br><br>
+    <b><label for="accountnum">Account number
+        <span>*</span></b><br>
+    </label>
+        <input type="text" id="number" name="number" required>
+        
+        <b>Accounting</b>
+          <input type="radio" id="bankacc" name="bankacc" value="checking">
+          <label for="accounting">Checking</label><br>
+        <input type="radio" id="bankacc" name="bankacc" value="savings">
+          <label for="accounting">Savings</label><br>
+
+    <b><label for="address">Address
+        <span>*</span></b><br>
+    </label>
+        <input type="text" id="address" name=" address" placeholder="Street Address"><br>
+        <input type="text" id="address" name=" address" placeholder="Street Address Line2"><br>
+        <input type="text" id="address" name=" address" placeholder="City">
+        <input type="text" id="address" name=" address" placeholder="State/Province"><br>
+        <input type="text" pattern="\d{6}" id="address" name=" address" placeholder="Postal/Zip code">
+        <input type="text" pattern="\d{6}" id="address" name=" address" placeholder="Country"><br>
+        <br><br>
+    <b><label for="Companyname">Company Name </b><br> </label>
+        <input type="text" id="cmpnyname" name="cmpnyname"><br><br><br>
+
+    <b><label for="Telephonenumber">Telephone number
+        <span>*</span></b><br>
+    </label>
+        <input type="text" pattern="\d{2}" id="tlphnnum" name="tlphnnum" placeholder="Area Code" required>
+        <input type="text" pattern="\d{10}" id="tlphnnum" name="tlphnnum" placeholder="Phone Number" required>
+    
+
+    
+</form>
+</body>
+</html>
