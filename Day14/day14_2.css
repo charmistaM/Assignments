@@ -1,0 +1,41 @@
+h3 {
+  color: #33a6d3;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 5px 5px #98acc4;
+  border: 5px double #5b4646;
+  background-color: #c7e5e5;
+  text-transform: uppercase;
+}
+h3:hover {
+  color: #793f3f;
+  font-size: 60px;
+}
+h4 {
+  text-decoration: underline;
+  text-shadow: 5px 5px #b3c1c0;
+  color: #09243d;
+  font-size: 30px;
+}
+h5 {
+  text-decoration: underline;
+  text-shadow: 5px 5px #e6e8e0;
+  color: #09243d;
+  font-size: 30px;
+}
+.p1 {
+  font-size: 30px;
+  color: #d2936f;
+  text-align: center;
+}
+.p2 {
+  font-size: 30px;
+  color: #d2936f;
+  text-align: center;
+}
+.p3 {
+  font-size: 30px;
+  color: #d2936f;
+  text-align: center;
+}
